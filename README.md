@@ -2,6 +2,10 @@
 
 BitAstro is an MVP I built (read: prompted) by Gemini / Claude / ChatGPT to really grok the full lifecycle of a small language model: designing and training a **custom BitNet-style Transformer from scratch** (BPE tokenization, RoPE, SwiGLU, ternary-weight layers), iterating on dataset quality and overfitting (train/val splits, BPC, sampling behavior), **exporting the final PyTorch model to ONNX**, and then **running it fully client-side in the browser using ONNX Runtime Web with WebGPU acceleration**. Along the way I also wired up a JS BPE tokenizer, integrated a WASM ephemeris engine for on-device astro math, and shipped the whole thing as a privacy-first PWA where all inference and calculations happen locally on the user’s machine.
 
+## Data source
+
+Found this dataset on huggingface: https://huggingface.co/datasets/karthiksagarn/astro_horoscope
+
 
 ## 🚀 Getting Started
 
